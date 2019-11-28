@@ -183,3 +183,13 @@ header section#chamada__header form input[type=submit]:hover {
     display: block;
   }
 }
+section#descricao__websystems {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+section#descricao__websystems p {
+  color: #31475E;
+  font-style: italic;
+  font-size: 20px;
+}
