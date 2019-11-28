@@ -1,6 +1,190 @@
+@import "bars.css";
 * {margin: 0; padding: 0; box-sizing: border-box; outline: none;}
-body,html {
-    height: 100%;
-    background: #333;
-    font-family: 'Roboto', sans-serif;
-}
+body,html {height: 100%;font-family: 'Roboto', sans-serif;}
+a{text-decoration: none;}
+ul{list-style-type: none;}
+.container {max-width: 1280px;padding: 0 2%;margin: 0 auto;}
+.clear {clear: both;}
+
+// header do meu site
+header {
+    background-image: url('../image/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+    background-size: cover;
+    min-height: 600px;
+
+    div.logo{
+        font-family: 'Bebas Neue', cursive,sans-serif;
+        float: left;
+        position: relative;
+        margin-left: 40px;
+        z-index: 999;
+        h1{
+            position: relative;
+            z-index: 9999;
+            font-size: 30px;
+            a{
+                color: white;
+                font-weight: 100;
+            }      
+        }
+        span{
+            padding: 0 2%;
+            position: absolute;
+            left: -20px;
+            top: 12px;
+            width: 45px;
+            height: 5px;
+            background-color: rgb(170, 45, 0);
+            transform: rotate(-28deg);
+            border-radius: 8px;
+           
+        }
+        span:before{
+            content: "";
+            position: absolute;
+            left: -13px;
+            top: 19px;
+            width: 50px;
+            height: 5px;
+            background-color: rgb(170, 45, 0);
+            border-radius: 8px;
+            transform: rotate(56deg);
+        }
+    }//div.logo
+
+    nav#menu-desktop {
+        float: right;
+        
+        li {
+            display: inline-block;
+            margin: 0 20px;
+
+            a {
+                color: white;
+            }        
+           
+        }
+        li.btnOrcamento {
+            border: 1px solid orangered;
+            padding: 5px 10px;
+            border-radius: 15px;    
+             
+            a:hover{
+                color: orangered;            
+            }
+        }
+   
+    }//nav#menu-desktop
+    
+    nav#menu-mobile {
+        float: left;
+        display: none;
+       
+        .mobileBtn {
+            top: 20px;
+        }
+        ul{
+            display: none;
+            background: #31475e;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 80px 0 30px 0;
+            border-bottom: 1px solid orangered;
+            text-align: center;
+          
+            li{
+                margin: 15px 0;
+                a {
+                    color: white;
+                    text-transform: uppercase;
+                }
+                
+            }
+            li.btnOrcamento {
+                border: 1px solid white;
+                padding: 5px 10px;
+                border-radius: 15px;    
+                display: inline-block;
+            }
+        }
+
+    }//nav#menu-mobile
+
+    section#chamada__header{
+        margin-top: 100px;
+
+        h2 {
+            max-width: 700px;
+            color: white;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 47px;
+        }
+        p {
+            color: white;
+            font-size: 20px;
+            margin: 40px 0 30px 0;
+            max-width: 500px;
+            font-weight: 300;
+        }
+        form {
+
+            input[type=email] {
+                width: 260px;
+                height: 44px;
+                border-radius: 40px;
+                border: none;
+                padding-left: 8px;
+                font-size: 17px;
+                margin-right: 10px;
+            }
+            input[type=submit] {
+                width: 260px;
+                height: 44px;
+                border-radius: 40px;
+                border: none;
+                font-size: 17px;
+                cursor: pointer;
+                color: white;
+                background-color: rgb(252, 86, 25);          
+            }
+            input[type=submit]:hover {
+                background-color: rgb(255, 106, 52);
+            }
+        }
+
+    }//section#chamada__header
+    @media (max-width: 768px){
+        section#chamada__header{
+            margin-top: 60px;
+            h2{
+                text-align: center;
+                font-size: 35px;
+            }
+            p{
+                text-align: center;
+                max-width: 700px;
+            }
+            form{
+                text-align: center;
+            }
+            input[type=submit]{
+                margin-top: 15px;
+            }
+        }
+        nav#menu-desktop{
+            display: none;
+        }
+        nav#menu-mobile{
+            display: block;
+        }
+       
+    }
+    
+}//header
+
