@@ -197,5 +197,104 @@ section#descricao__websystems{
         font-size: 20px;
     }
 
+}//descricao__websystems
+
+section#descricao__websystems_02{
+    padding: 40px 0;
+    .box__flex{
+        display: flex;
+        justify-content: center;
+       
+    }   
+    .texto__descricao {
+        width: 40%;
+        h2{
+            color: #31475E;
+            font-weight: normal;
+            padding: 10px 0;
+            font-size: 22px;
+            line-height: 32px;
+        }
+        p{
+            color: #31475e;
+            line-height: 22px;
+        }
+    }
+    img{
+        max-width: 100%;
+    }
+    @media(max-width: 1023px){   
+        .box__flex{
+            flex-wrap: wrap;
+        }
+        .texto__descricao {
+            width: 60%;
+            @media (max-width: 768px) {
+                width: 85%;
+            }
+            @media (max-width: 500px) {
+                width: 100%;
+            }
+        }
+        img{
+            margin-top: 30px;
+        }
+    }
+  
+}//descricao__websystems_02
+
+section#descricao__websystems_03{
+    padding: 10px 0 100px 0;
+    #bg__2{
+        position: relative;
+        background-image: url('../image/bg2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        max-width: 940px;
+        width: 100%;
+        min-height: 330px;
+        margin: 0 auto;
+        @media (max-width: 768px){
+            background-size: cover;
+        }
+       
+        .bg__depoimento{
+            position: absolute;
+            bottom: -60px;
+            left: 380px;
+            background-color: white;
+            padding: 30px;
+            width: 400px;
+            box-shadow: 0px 8px 20px rgba(24, 24, 24, 0.24);
+            @media (max-width: 865px){
+                bottom: -40px;
+                left: 250px;
+            }
+            @media (max-width: 708px){
+                bottom: -40px;
+                left: 10px;
+            }
+            @media (max-width: 500px){
+            bottom: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            // background-color: transparent;
+            padding: 5px 2%;
+            width: 90%;
+            box-shadow: none;
+            opacity: 0.8;
+            }
+           
+            p{
+                color: #31475e;
+                margin-bottom: 20px;
+            }
+            span{
+                color: #31475e;
+            }
+        }
+    }
 }
+
 
