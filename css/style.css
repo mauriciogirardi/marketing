@@ -359,6 +359,8 @@ section#servicos .servicos__box .servicos__wraper .servicos__conteudo p {
   color: #31475e;
   font-size: 14px;
   padding: 20px 0;
+  line-height: 25px;
+  font-weight: lighter;
 }
 section#servicos .servicos__box .servicos__wraper .servicos__conteudo a {
   border: 1px solid #ccc;
