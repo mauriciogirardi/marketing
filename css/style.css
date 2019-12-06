@@ -296,3 +296,74 @@ section#descricao__websystems_03 #bg__2 .bg__depoimento p {
 section#descricao__websystems_03 #bg__2 .bg__depoimento span {
   color: #31475e;
 }
+section#servicos {
+  padding: 30px 0 60px 0;
+}
+section#servicos .servicos__title {
+  position: relative;
+}
+section#servicos .servicos__title h3 {
+  color: #31475e;
+  text-align: center;
+  font-size: 22px;
+  font-weight: normal;
+}
+section#servicos .servicos__title span {
+  position: absolute;
+  top: 50px;
+  left: 48%;
+  transform: rotate(40deg);
+  background: #31475e;
+  height: 4px;
+  width: 20px;
+  border-radius: 30px;
+}
+@media (max-width: 390px) {
+  section#servicos .servicos__title span {
+    top: 80px;
+  }
+}
+section#servicos .servicos__title span::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 48%;
+  transform: rotate(100deg);
+  background: #31475e;
+  height: 4px;
+  width: 20px;
+  border-radius: 30px;
+}
+section#servicos .servicos__box {
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section#servicos .servicos__box .servicos__wraper {
+  box-shadow: 0px 8px 20px rgba(24, 24, 24, 0.24);
+  max-width: 300px;
+  margin: 20px 10px;
+}
+section#servicos .servicos__box .servicos__wraper .servicos__conteudo {
+  max-width: 300px;
+  width: 100%;
+  padding: 25px;
+}
+section#servicos .servicos__box .servicos__wraper .servicos__conteudo h3 {
+  color: #31475e;
+  font-weight: normal;
+  font-size: 18px;
+}
+section#servicos .servicos__box .servicos__wraper .servicos__conteudo p {
+  color: #31475e;
+  font-size: 14px;
+  padding: 20px 0;
+}
+section#servicos .servicos__box .servicos__wraper .servicos__conteudo a {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: #31475e;
+  text-transform: uppercase;
+}
