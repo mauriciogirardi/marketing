@@ -481,10 +481,10 @@ section#formulario form input[type=submit] {
   outline: none;
 }
 @media (max-width: 500px) {
-  section#formulario form {
-    width: 50%;
+  section#formulario form input[type=submit] {
+    width: 60%;
   }
 }
-section#formulario input[type=submit]:hover {
+section#formulario form input[type=submit]:hover {
   background-color: #ff6a34;
 }
