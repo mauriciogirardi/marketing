@@ -1,7 +1,7 @@
 @import "bars.css";
 * {margin: 0; padding: 0; box-sizing: border-box; outline: none;}
 body {height: 100%;font-family: 'Roboto', sans-serif; overflow-x: hidden;}
-input[type=text],input[type=submit],input[type=email],input[type=tel],textarea{appearance: none;}
+input[type=text],input[type=submit],input[type=email],input[type=tel],textarea{appearance: none; -webkit-appearance: none;}
 a{text-decoration: none;}
 ul{list-style-type: none;}
 .container {max-width: 1280px;padding: 0 2%;margin: 0 auto;}
@@ -480,11 +480,83 @@ section#formulario{
         }
         input[type=submit]:hover{
             background-color: rgb(255, 106, 52);
+        }           
+    }        
+}//section#formulario
+
+footer{
+    padding: 30px 0;
+    .footer__flex{
+        display: flex;
+        justify-content: space-around;
+        @media (max-width: 765px){
+            flex-wrap: wrap;
         }
-           
-            
+
+        .footer__box{
+            text-align: center;
+            width: 33.3%;
+            @media (max-width: 765px){
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            h2{
+                color: #31475e;
+                font-weight: normal;
+                margin-bottom: 10px;
+                font-size: 22px;
+            }
+            p{
+                color: #31475e;
+                font-size: 15px;
+            }
+            form{
+                input[type=email]{
+                    height: 30px;
+                    width: 180px;
+                    border: 1px solid #cccccc;
+                    border-radius: 100px;
+                    padding-left: 8px;
+                    margin-right: 3px;
+                }
+                input[type=email]:focus{outline: 0;}
+                button{
+                    width: 50px;
+                    height: 30px;
+                    background-color: transparent;
+                    border: 1px solid #cccccc;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    i{                      
+                        font-size: 19px; 
+                    }
+                    
+                }
+                button:hover{
+                    color: orangered;
+                }
+            }
+        }
     }
-        
+}//footer
+
+section#sub__footer{
+    .container{
+        border-top: 1px solid #31475e3d;
+        max-width: 1050px;
+    }
+    .sub__footer__flex{
+        margin: 15px 0;
+        display: flex;
+        justify-content: space-around;
+        a{
+            color: #31475e;
+            i{
+                font-size: 30px;
+            }
+        }
+    }
+    
 }
 
 
