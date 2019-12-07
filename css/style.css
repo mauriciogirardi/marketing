@@ -153,6 +153,11 @@ header section#chamada__header form input[type=email] {
   font-size: 17px;
   margin-right: 10px;
 }
+@media (max-width: 500px) {
+  header section#chamada__header form input[type=email] {
+    margin-right: 0;
+  }
+}
 header section#chamada__header form input[type=submit] {
   width: 260px;
   height: 44px;
@@ -541,7 +546,7 @@ footer .footer__flex .footer__box form button {
   cursor: pointer;
 }
 footer .footer__flex .footer__box form button i {
-  font-size: 19px;
+  font-size: 16px;
 }
 footer .footer__flex .footer__box form button:hover {
   color: orangered;
